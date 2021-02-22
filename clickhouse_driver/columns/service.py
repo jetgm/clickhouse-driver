@@ -56,7 +56,7 @@ def get_column_by_spec(spec, column_options):
     elif spec.startswith('Enum'):
         return create_enum_column(spec, column_options)
 
-    elif spec.startswith('DateTime'):
+    elif spec.lower.startswith('datetime'):
         return create_datetime_column(spec, column_options)
 
     elif spec.startswith('Decimal'):
